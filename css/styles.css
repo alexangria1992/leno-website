@@ -225,6 +225,68 @@ img {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
+
+/* Features */
+.features {
+  background-color: var(--tertiary-color);
+  padding: 6rem 2rem;
+}
+
+.features__container {
+  text-align: center;
+}
+
+.features__title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.features__description {
+  max-width: 600px;
+  margin: 1rem auto 4rem;
+}
+
+.features__grid {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 2rem;
+}
+
+.features__grid-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.features__grid-item {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: right;
+  gap: 1.5rem;
+}
+
+.features__grid-item-text-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.features__grid-item-icon {
+  margin-top: 2rem;
+}
+
+.features__grid-item-icon i {
+  color: var(--primary-color);
+}
+
+.features__grid-column-right .features__grid-item {
+  flex-direction: row-reverse;
+  text-align-last: left;
+}
 /* Media Queries */
 @media (max-width: 992px) {
   .hero {
